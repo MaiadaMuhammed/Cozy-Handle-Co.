@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fffaf6;
+  color: #333;
+  padding: 20px;
+}
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header h1 {
+  color: #b35d2e;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.filters button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e0c3a3;
+  color: #b35d2e;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.filters button:hover {
+  background-color: #b35d2e;
+  color: #e6d1bc;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.product {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: 0.3s;
+}
+.product:hover {
+  transform: translateY(-5px);
+}
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.product h3 {
+  margin-bottom: 5px;
+  color: #b35d2e;
+}
+.product p {
+  font-size: 14px;
+  color: #4a2c20;
+}
+
+footer {
+  background-color: #f5e9dc;
+  color: #b35d2e;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+.F-div {
+  max-width: 800px;
+  margin: auto;
+}
+footer > h2 {
+  margin-bottom: 10px;
+}
+footer p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.F-buttons {
+  margin-bottom: 15px;
+}
+.F-buttons a {
+  margin: 0 10px;
+  color: #4a2c20;
+  text-decoration: none;
+  font-weight: 600;
+}
+.F-icons {
+  margin-bottom: 10px;
+}
+.F-icons a {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.F-div p {
+  font-size: 15px;
+  color: #7a5c4a;
+}
+.F-div span {
+  color: #4a2c20;
+
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
